@@ -1,0 +1,21 @@
+{
+  "name": "angular-movies-client",
+  "version": "0.0.1",
+  "authors": [
+    "Ivan Marban"
+  ],
+  "description": "Angular movies RESTful client",
+  "keywords": [
+    "angular",
+    "restful",
+    "client"
+  ],
+  "license": "GNU",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.0",
+    "gulp-webserver": "^0.9.0",
+    "opn": "^1.0.1"
+  }
+}
