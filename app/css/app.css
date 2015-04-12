@@ -1,0 +1,13 @@
+.form-group .help-block {
+  display: none;
+}
+ 
+.form-group.has-error .help-block {
+  display: block;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}

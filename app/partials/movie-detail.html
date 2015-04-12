@@ -1,0 +1,39 @@
+<div class="container col-sm-7 center">
+	<div class="page-header">
+		<h3>Update movie</h3>
+	</div>
+	<form name="movieForm" novalidate>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Title</label>
+			<input type="text" class="form-control" name="title" ng-model="movie.title" required placeholder="Title" />
+			<p class="help-block" ng-if="movieForm.title.$error.required">The movie's title is required</p>
+		</div>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Year</label>
+			<input type="text" class="form-control" name="year" ng-model="movie.year" required placeholder="Year" />
+			<p class="help-block" ng-if="movieForm.year.$error.required">The movie's year is required</p>
+		</div>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Rated</label>
+			<input type="text" class="form-control" name="rated" ng-model="movie.rated" required placeholder="Rate" />
+			<p class="help-block" ng-if="movieForm.rated.$error.required">The movie's rate is required</p>
+		</div>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Runtime</label>
+			<input type="text" class="form-control" name="runtime" ng-model="movie.runtime" required placeholder="Runtime" />
+			<p class="help-block" ng-if="movieForm.runtime.$error.required">The movie's runtime is required</p>
+		</div>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Genre</label>
+			<input type="text" class="form-control" name="genre" ng-model="movie.genre" required placeholder="Genre" />
+			<p class="help-block" ng-if="movieForm.genre.$error.required">The movie's genre is required</p>
+		</div>
+		<div class="form-group" show-errors='{showSuccess: true}'>
+			<label class="control-label">Director</label>
+			<input type="text" class="form-control" name="director" ng-model="movie.director" required placeholder="Director" />
+			<p class="help-block" ng-if="movieForm.genre.$error.required">The movie's director is required</p>
+		</div>
+		<button class="btn btn-success" ng-click="updateMovie()">Update Movie</button>
+		<button class="btn btn-danger" ng-click="cancel()">Cancel</button>
+	</form>
+</div>
