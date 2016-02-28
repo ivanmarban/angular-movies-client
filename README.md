@@ -11,7 +11,7 @@ This example is a quick exercise to illustrate how to make a RESTful client with
 ## Installation
 Clone this repository
 ```sh
-$ git clone git@github.com:ivanmarban/angular-movies-client.git
+$ git clone https://github.com/ivanmarban/angular-movies-client.git
 ```
 Install bower dependencies and gulp stuff
 ```sh
