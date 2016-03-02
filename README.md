@@ -23,3 +23,16 @@ Run gulp local web server at http://localhost:3001
 ```sh
 $ gulp
 ```
+## Docker
+Run mongodb container
+```sh
+$ docker run -d -ti --name movies-database mvertes/alpine-mongo 
+```
+Run RESTful API container
+```sh
+$ docker run -d -ti -p 3000:3000 --name movies-back-end --link movies-database:db -e MONGODB_DB=movies -e MONGODB_HOST=db -e PORT=3000 ivanmarban/movies-back-end 
+```
+Run AngularJS App
+```sh
+$ docker run -d -ti -p 8080:80 --name movies-front-end --link movies-back-end:movies-back-end ivanmarban/movies-front-end 
+```
