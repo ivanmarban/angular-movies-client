@@ -7,6 +7,7 @@ This example is a quick exercise to illustrate how to make a RESTful client with
 - bower
 - gulp
 - Movies RESTful server [here](https://github.com/ivanmarban/node-movies-restful) or [here](https://github.com/ivanmarban/spring-boot-movies-restful)
+- docker
 
 ## Installation
 Clone this repository
